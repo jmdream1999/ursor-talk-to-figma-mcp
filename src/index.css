@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.asset-15-1 {
+    position: absolute;
+    top: calc(50% - 69px);
+    left: calc(50% - 83px);
+    width: 165px;
+    height: 137px;
+    overflow: hidden;
+}
+
+.border {
+    position: absolute;
+    top: 0px;
+    right: 2.3px;
+    border-radius: 3.5px;
+    background-color: #000;
+    width: 25px;
+    height: 13px;
+    opacity: 0.35;
+    mix-blend-mode: normal;
+}
+
+.cap-icon {
+    position: absolute;
+    top: 4.67px;
+    right: 0px;
+    width: 1.3px;
+    height: 4px;
+    opacity: 0.4;
+    mix-blend-mode: normal;
+}
+
+.capacity {
+    position: absolute;
+    top: 2px;
+    right: 4.3px;
+    border-radius: 1.33px;
+    background-color: #000;
+    width: 21px;
+    height: 9px;
+}
+
+.battery {
+    position: absolute;
+    top: 19.33px;
+    right: 26.37px;
+    width: 27.3px;
+    height: 13px;
+}
+
+.wifi-icon {
+    position: relative;
+    width: 17px;
+    height: 12px;
+}
+
+.cellular-connection-icon {
+    position: relative;
+    width: 19.2px;
+    height: 12px;
+}
+
+.time-icon {
+    position: absolute;
+    top: calc(50% - 4.28px);
+    left: 36.83px;
+    width: 33.3px;
+    height: 12.6px;
+}
+
+.status-bars {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 48px;
+}
+
+.div {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 874px;
+    overflow: hidden;
+} 

@@ -1,0 +1,251 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #7A2R7AHR;  /* 피그마의 메인 컬러 */
+    --secondary-color: #333333;
+    --text-color: #1A1A1A;
+    --background-color: #FFFFFF;
+    --accent-color: #FF4D4D;
+    --gray-light: #F5F5F5;
+}
+
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+/* Header styles */
+.main-header {
+    padding: 24px 0;
+    background-color: var(--background-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 32px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero section styles */
+.hero-section {
+    padding: 120px 0;
+    text-align: center;
+    background-color: var(--gray-light);
+}
+
+.hero-section h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: var(--text-color);
+}
+
+.hero-description {
+    font-size: 24px;
+    color: var(--secondary-color);
+    margin-bottom: 48px;
+    font-weight: 400;
+}
+
+.cta-button {
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Features section styles */
+.features-section {
+    padding: 120px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.feature-card {
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 32px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-card h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* Footer styles */
+.main-footer {
+    background-color: var(--text-color);
+    color: white;
+    padding: 80px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    height: 24px;
+    margin-bottom: 24px;
+}
+
+.footer-links ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .hero-section h1 {
+        font-size: 48px;
+    }
+
+    .features-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .features-section {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.square-frame {
+    width: 1080px;
+    height: 1080px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+    .square-frame {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+} 

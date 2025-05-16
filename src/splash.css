@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.div {
+    width: 402px;  /* Updated width */
+    position: relative;
+    background-color: #fff;
+    height: 874px;  /* Updated height */
+    overflow: hidden;
+}
+
+.asset-15-1 {
+    position: absolute;
+    width: 165px;
+    height: 137px;
+    left: 118px;  /* Updated position */
+    top: 368px;   /* Updated position */
+    overflow: hidden;
+}
+
+.status-bars {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.time-icon {
+    position: absolute;
+    left: 41.27px;
+    top: 19.72px;
+    width: 35px;
+    height: 13px;
+}
+
+.cellular-connection-icon {
+    position: absolute;
+    right: 68px;
+    top: 19.33px;
+    width: 20px;
+    height: 12px;
+}
+
+.wifi-icon {
+    position: absolute;
+    right: 45px;
+    top: 19.33px;
+    width: 16px;
+    height: 12px;
+}
+
+.battery {
+    position: absolute;
+    top: 19.33px;
+    right: 16px;
+    width: 27.3px;
+    height: 13px;
+}
+
+.border {
+    position: absolute;
+    top: 0;
+    right: 2.3px;
+    border-radius: 3.5px;
+    background-color: #000;
+    width: 25px;
+    height: 13px;
+    opacity: 0.35;
+}
+
+.cap-icon {
+    position: absolute;
+    top: 4.67px;
+    right: 0;
+    width: 1.3px;
+    height: 4px;
+    opacity: 0.4;
+}
+
+.capacity {
+    position: absolute;
+    top: 2px;
+    right: 4.3px;
+    border-radius: 1.33px;
+    background-color: #000;
+    width: 21px;
+    height: 9px;
+} 

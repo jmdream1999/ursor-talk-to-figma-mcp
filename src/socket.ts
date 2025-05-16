@@ -3,14 +3,26 @@ import { Server, ServerWebSocket } from "bun";
 // Store clients by channel
 const channels = new Map<string, Set<ServerWebSocket<any>>>();
 
+// Auto-join channel
+const DEFAULT_CHANNEL = "7a2r7ahr";
+
 function handleConnection(ws: ServerWebSocket<any>) {
   // Don't add to clients immediately - wait for channel join
   console.log("New client connected");
 
-  // Send welcome message to the new client
+  // Auto-join the default channel
+  if (!channels.has(DEFAULT_CHANNEL)) {
+    channels.set(DEFAULT_CHANNEL, new Set());
+  }
+  
+  const channelClients = channels.get(DEFAULT_CHANNEL)!;
+  channelClients.add(ws);
+
+  // Notify client they joined successfully
   ws.send(JSON.stringify({
     type: "system",
-    message: "Please join a channel to start chatting",
+    message: `Auto-joined channel: ${DEFAULT_CHANNEL}`,
+    channel: DEFAULT_CHANNEL
   }));
 
   ws.close = () => {
@@ -39,7 +51,7 @@ function handleConnection(ws: ServerWebSocket<any>) {
 const server = Bun.serve({
   port: 3055,
   // uncomment this to allow connections in windows wsl
-  // hostname: "0.0.0.0",
+  hostname: "0.0.0.0",
   fetch(req: Request, server: Server) {
     // Handle CORS preflight
     if (req.method === "OPTIONS") {
