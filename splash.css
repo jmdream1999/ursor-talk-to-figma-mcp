@@ -45,14 +45,13 @@ body {
     align-items: center;
 }
 
-.cellular {
+.cellular, .wifi, .battery {
     height: 12px;
     opacity: 0.4;
 }
 
-.wifi {
-    height: 12px;
-    opacity: 0.4;
+.battery {
+    height: 14px;
 }
 
 .battery-container {
@@ -87,61 +86,20 @@ body {
     margin-left: 2px;
 }
 
-/* Login Container */
-.login-container {
+/* Logo Container */
+.logo-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
     display: flex;
-    flex-direction: column;
-    gap: 28px;
-}
-
-.kakao-login, .google-login {
-    width: 100%;
-    height: 56px;
-    border-radius: 12px;
-    border: none;
-    font-family: 'Pretendard';
-    font-size: 16px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 16px;
-    cursor: pointer;
-    padding: 0 20px;
+    align-items: center;
 }
 
-.kakao-login {
-    background-color: #FAE100;
-    color: #212121;
-}
-
-.google-login {
-    background-color: white;
-    border: 1px solid #DEDEDE;
-    color: #17191A;
-}
-
-.contact-us {
-    width: 100%;
-    height: 56px;
-    border: none;
-    background: none;
-    font-family: 'Pretendard';
-    font-size: 14px;
-    font-weight: 500;
-    color: #D6D6D6;
-    cursor: pointer;
-    padding: 0;
-}
-
-.kakao-icon, .google-icon {
-    width: 24px;
-    height: 24px;
+.logo {
+    width: 165px;
+    height: 137px;
 }
 
 /* Home Indicator */
@@ -161,20 +119,4 @@ body {
     height: 5px;
     background-color: #17191A;
     border-radius: 2.5px;
-}
-
-/* Logo Container */
-.logo-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo {
-    width: 165px;
-    height: 137px;
 } 
