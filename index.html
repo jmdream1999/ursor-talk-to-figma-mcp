@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Talk to Figma</title>
+    <link rel="stylesheet" href="splash.css">
+</head>
+<body>
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="time">9:41</div>
+        <div class="icons">
+            <img src="assets/Cellular Connection.svg" alt="Cellular">
+            <img src="assets/Wifi.svg" alt="Wifi">
+            <img src="assets/Cap.svg" alt="Battery">
+        </div>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="assets/logo.svg" alt="Logo" class="logo">
+    </div>
+
+    <!-- Home Indicator -->
+    <div class="home-indicator">
+        <div class="indicator"></div>
+    </div>
+
+    <script>
+        // 5초 후 로그인 화면으로 이동
+        setTimeout(() => {
+            window.location.href = 'login.html';
+        }, 5000);
+    </script>
+</body>
+</html> 
